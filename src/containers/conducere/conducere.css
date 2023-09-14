@@ -1,0 +1,259 @@
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.heading {
+    text-transform: uppercase;
+    font-size: 25pxrem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.heading:after {
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #45e19f;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+
+}
+
+.card {
+    width: 330px;
+    height: 80%;
+    background-color: #c1cda1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.card .card-img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 66%, 0% 100%);}
+
+.profile-img {
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -9rem;
+    z-index: 999;
+    border: 1rem solid #ebeef8;
+}
+
+.card h1 {
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: #333;
+    padding-top: 1rem;
+    
+}
+
+.job-title {
+    font-family: var(--font-family);
+    color: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*.card .btn {
+    font-family: var(--font-family);
+    padding: 10px 15px;
+    background-color: #445ae3;
+    border-radius: 1rem;
+    margin: .4rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 8px;
+    transition: all .5s;
+}
+
+.card .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
+}
+
+.card .btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}*/
+
+.btn {
+    display: inline-block;
+    background-color: #445ae3;
+    text-decoration: none;
+    width: 160px;
+    height: 30px;
+    margin: .4rem 0;
+    color: #eee;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: 16px;
+    box-shadow: inset 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    
+}
+
+.btn.pastor1::after,
+.btn.pastor2::after,
+.btn.pastor3::after,
+.btn.pastor4::after,
+.btn.pastor5::after,
+.btn.pastor6::after,
+.btn.pastor7::after,
+.btn.btn.pastor1::before,
+.btn.btn.pastor2::before,
+.btn.btn.pastor3::before,
+.btn.btn.pastor4::before,
+.btn.btn.pastor5::before,
+.btn.btn.pastor6::before,
+.btn.btn.pastor7::before {
+    content: "Contact";
+    position: absolute;
+    left: -0.2rem;
+    font-size: 13px;
+    width: 100%;
+    font-family: var(--font-family);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.9;
+    transition: all 400ms;
+    top:0
+}
+
+.btn.pastor1:hover::after,
+.btn.pastor2:hover::after,
+.btn.pastor3:hover::after,
+.btn.pastor4:hover::after,
+.btn.pastor5:hover::after,
+.btn.pastor6:hover::after,
+.btn.pastor7:hover::after{
+    top: -36px;
+    
+}
+
+.btn.btn.pastor1::before {
+    content: "0034 685 85 85 96";
+    top:36px
+}
+
+.btn.btn.pastor2::before {
+    content: "";
+
+    top:36px
+}
+
+.btn.btn.pastor3::before {
+    content: "";
+    top:36px
+}
+
+.btn.btn.pastor4::before {
+    content: "";
+    top:36px
+}
+
+.btn.btn.pastor5::before {
+    content: "5";
+    top:36px
+}
+
+.btn.btn.pastor6::before {
+    content: "";
+    top:36px
+}
+
+.btn.btn.pastor7::before {
+    content: "";
+    top:36px
+}
+
+.btn.btn.pastor1:hover::before,
+.btn.btn.pastor2:hover::before,
+.btn.btn.pastor3:hover::before,
+.btn.btn.pastor4:hover::before,
+.btn.btn.pastor5:hover::before,
+.btn.btn.pastor6:hover::before,
+.btn.btn.pastor7:hover::before {
+    top: 0;
+    background-color: #445ae3;
+}
+
+
+.social-media {
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.2rem 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.social-media i {
+    font-size: 2rem;
+    transition: color .5s;
+
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-media img:hover {
+    color: #45e19f;
+}
+
+
+@media screen and (max-width:1050px) {
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .heading:after {
+        
+        width: 7rem;
+        height: .4rem;
+        background-color: #45e19f;
+    }
+
+
+}
+
+@media screen and (max-width:490px) {
+    .card {
+        width: 80%;
+    }
+}

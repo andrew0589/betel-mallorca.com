@@ -1,0 +1,17 @@
+.betel__mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 100px;
+
+    
+}
+
+
+@media screen and (max-width: 1050px ) {
+    .betel__mapa {
+        width: 80%;
+        margin-left: 1rem;
+    }
+}
+
