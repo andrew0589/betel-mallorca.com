@@ -6,6 +6,8 @@ import MapSection from './containers/mapa/Mapa'
 import './App.css'
 
 const App = () => {
+  document.title = "Biserica Penticostală Română Betel"; // Replace "New Title Name" with your desired title
+
   return (
     <>
       <CustomNavbar/>
